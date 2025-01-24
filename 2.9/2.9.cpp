@@ -61,7 +61,7 @@ int main()
     for (i=0;i<=1;i=i+1){
         for (j=0;j<=1;j=j+1){
             for (k=0;k<=1;k=k+1){
-                cout<<i<<j<<k<<" "<<E[i][j][k]<<endl;
+                cout<<"E[flips --> "<<i<<j<<k<<"] = "<<E[i][j][k]<<endl;
             }
         }
     }
