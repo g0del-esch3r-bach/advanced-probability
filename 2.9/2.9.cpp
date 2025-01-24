@@ -19,7 +19,7 @@ int main()
             continue;
         }
         if (A[V[ctr-3]][V[ctr-2]][V[ctr-1]]==0){
-            A[V[ctr-3]][V[ctr-2]][V[ctr-1]]==ctr;
+            A[V[ctr-3]][V[ctr-2]][V[ctr-1]]=ctr;
             res+=1;
         }
     }
