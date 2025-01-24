@@ -49,6 +49,7 @@ int main()
         for (j=0;j<=1;j=j+1){
             for (k=0;k<=1;k=k+1){
                 E[i][j][k]=0;
+                W[i][j][k]=0;
                 //cout<<i<<j<<k<<endl;
                 for (l=0;l<=N-1;l=l+1){
                     //cout<<A[i][j][k][l]<<endl;
