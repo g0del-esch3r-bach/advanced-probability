@@ -6,7 +6,6 @@ using namespace std;
 int A[2][2][2][10000];
 void simul(int N)
 {
-    srand(time(0));
     vector<int>V;
     int res,ctr,i,j,k;
     res=0;
@@ -37,9 +36,10 @@ void simul(int N)
 }
 int main()
 {
-    for (int i=0;i<=1000;i=i+1)
+    srand(time(0));
+    for (int N=0;N<=1000;N=N+1)
     {
-        simul(i);
+        simul(N);
         cout<<endl<<"================================"<<endl;
     }
 }
