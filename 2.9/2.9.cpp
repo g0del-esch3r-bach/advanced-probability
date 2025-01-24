@@ -36,10 +36,24 @@ void simul(int N)
 }
 int main()
 {
+    freopen("game.out","w",stdout);
     srand(time(0));
-    for (int N=0;N<=1000;N=N+1)
-    {
-        simul(N);
+    int N,i,j,k,l;
+    cin>>N;
+    for (i=0;i<=N-1;i=i+1){
+        simul(i);
         cout<<endl<<"================================"<<endl<<endl;
     }
+    for (i=0;i<=1;i=i+1){
+        for (j=0;j<=1;j=j+1){
+            for (k=0;k<=1;k=k+1){
+                cout<<i<<j<<k<<" ";
+                for (l=0;l<=N-1;l=l+1){
+                    cout<<A[i][j][k][l]<<" ";
+                }
+                cout<<endl;
+            }
+        }
+    }
+    return 0;
 }
