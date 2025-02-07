@@ -36,10 +36,10 @@ void simul(int N)
 }
 int main()
 {
-    freopen("game.out","w",stdout);
     srand(time(0));
     int N,i,j,k,l,temp[3];
     float E[2][2][2],P[2][2][2];
+    cout<<"# iterations to simulate for: ";
     cin>>N;
     for (i=0;i<=N-1;i=i+1){
         simul(i);
