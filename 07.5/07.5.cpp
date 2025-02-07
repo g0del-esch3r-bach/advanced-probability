@@ -19,13 +19,15 @@ int simul(int N,int M)
     for (i=0;i<=M;i=i+1){
         V.clear();
         copy(shut.begin(),shut.end(),back_inserter(V));
-        if(i<M){
+        if (i<M){
             temp=V[rand()%V.size()];
             shut.erase(temp);
             open.insert(temp);
         }
         else{
-            V.push_back(prz);
+            if (prz!=str){
+                V.push_back(prz);
+            }
             fin=V[rand()%V.size()];
         }
     }
