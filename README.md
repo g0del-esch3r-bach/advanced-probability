@@ -1,5 +1,4 @@
 # Advanced Probability (MATH565)
 Problems that need some coding.
-* Day 2 Problem 9
-   
-   ![image](https://github.com/user-attachments/assets/9f720a97-4f17-4cac-bf0f-87c352c0ab9d)
+* Day 2 Problem 9 — Penney's Game
+* Day 7 Problem 5 — Monty Hall
