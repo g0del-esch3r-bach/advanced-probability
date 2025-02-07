@@ -30,7 +30,7 @@ int simul(int N,int M)
         }
     }
     cout<<"init guess: "<<str<<endl<<"monty opens: ";
-    for (i : open){
+    for (auto i : open){
         cout<<i<<" ";
     }
     cout<<endl<<"final guess: "<<fin<<endl<<"prize door: "<<prz<<endl<<endl;
@@ -38,16 +38,19 @@ int simul(int N,int M)
 }
 int main()
 {
-    int N,M,T,i;
-    cout<<"# total doors:";
+    int N,M,T,i,res;
+    cout<<"# total doors: ";
     cin>>N;
-    cout<<"# goats revealed:";
+    cout<<"# goats revealed: ";
     cin>>M;
-    cout<<"# iterations";
+    cout<<"# iterations: ";
     cin>>T;
     srand(time(0));
+    res=0;
     for (i=0;i<=T-1;i=i+1){
-        cout<<simul(N,M);
+        cout<<"round #"<<i+1<<endl;
+        res+=simul(N,M);
     }
+    cout<<endl<<(float)res/(float)T;
     return 0;
 }
