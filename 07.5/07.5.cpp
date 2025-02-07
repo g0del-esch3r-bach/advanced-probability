@@ -8,6 +8,7 @@ int simul(int N,int M)
 {
     int str,fin,prz,i;
     set<int>open,shut;
+    vector<int>V;
     for (i=1;i<=N;i=i+1){
         shut.insert(i);
     }
@@ -16,7 +17,7 @@ int simul(int N,int M)
     shut.erase(prz);
     for (i=0;i<=M-1;i=i+1)
     {
-        
+        copy(shut.begin(),shut.end(),back_inserter(V));
     }
 }
 int main()
