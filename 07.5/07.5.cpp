@@ -53,6 +53,7 @@ int main()
         cout<<"round #"<<i+1<<endl;
         res+=simul(N,M);
     }
-    cout<<endl<<(float)res/(float)T;
+    cout<<endl<<"win rate: "<<(float)res/(float)T<<endl;
+    cout<<"predicted win rate: "<<(float)(N-1)/(float)(N*(N-1-M));
     return 0;
 }
